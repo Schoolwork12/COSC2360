@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <!--
+        Created by Tony Dyer
+         started 10/3/2024
+         COSC2360 Midterm Project
+    -->
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="TonyPizza.css" />
+            <script src = "Tonyspizza.js" defer></script>
+            <title>Pizza Order Form</title>
+
+        </head>
+        <body>
+        
+        <h1>Pizza Order Form</h1>
+        
+        <form id="pizzaForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="crust">Crust Type (with Prices):</label>
+                <select id="crust" name="crust" required>
+                    <option value="">Select Crust</option>
+                    <option value="thin" data-price="8.00">Thin Crust - $8.00</option>
+                    <option value="thick" data-price="9.00">Thick Crust - $9.00</option>
+                    <option value="stuffed" data-price="10.00">Stuffed Crust - $10.00</option>
+                    <option value="gluten-free" data-price="11.50">Gluten-Free Crust - $11.50</option>
+                </select>
+            </div>
+        
+            <div class="form-group">
+                <label>Toppings:</label>
+                <input type="checkbox" id="pepperoni" name="topping" value="Pepperoni" data-price="1.50">
+                <label for="pepperoni">Pepperoni</label>
+        
+                <input type="checkbox" id="mushrooms" name="topping" value="Mushrooms" data-price="2.75">
+                <label for="mushrooms">Mushrooms</label>
+        
+                <input type="checkbox" id="onions" name="topping" value="Onions" data-price="1.50">
+                <label for="onions">Onions</label>
+        
+                <input type="checkbox" id="sausage" name="topping" value="Sausage" data-price="1.70">
+                <label for="sausage">Sausage</label>
+        
+                <input type="checkbox" id="bacon" name="topping" value="Bacon" data-price="2.00">
+                <label for="bacon">Bacon</label>
+        
+                <input type="checkbox" id="extraCheese" name="topping" value="Extra Cheese" data-price="1.50">
+                <label for="extraCheese">Extra Cheese</label>
+            </div>
+        
+            <div class="form-group">
+                <label for="payment">Payment Method:</label>
+                <input type="radio" id="creditCard" name="payment" value="Credit Card" required>
+                <label for="creditCard">Credit Card</label>
+        
+                <input type="radio" id="paypal" name="payment" value="PayPal">
+                <label for="paypal">PayPal</label>
+        
+                <input type="radio" id="cash" name="payment" value="Cash on Delivery">
+                <label for="cash">Cash on Delivery</label>
+            </div>
+        
+            <input type="submit" value="Order Pizza">
+        
+            <div id="error-message" class="error"></div>
+            <div id="total-price-section">
+                    Total Price: $<span id="total-price">0.00</span>
+            </div>
+        </form>

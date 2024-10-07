@@ -1,0 +1,155 @@
+/* Apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/* I genuinly dont know how to get this css to work, ive never written css before so idk how to fix it :( */
+/*addendum I GOT IT TO WORK YEAAHHH */
+/* Reset rules */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+   display: block;
+}
+
+body {
+   line-height: 1.5;
+   width: 960px;
+   background: #fff;
+   margin: 0 auto;
+   font-family: Verdana, Geneva, sans-serif; 
+}
+
+/* Reset list styles */
+ol, ul {
+   list-style: none;
+}
+
+/* Page header styling */
+header {
+   background: #5472B2;
+   width: 100%;
+   color: #582588;
+   font-size: 48px;
+   text-align: center;
+   line-height: 1.5em;
+   margin-bottom: 20px;
+}
+
+/* Form container */
+form {
+   padding: 20px;
+   background-color: #b3b5b8;
+   border: 1px solid #2f583f;
+   border-radius: 5px;
+}
+
+/* Form groups */
+.form-group {
+   margin-bottom: 20px;
+   margin-right: 15px;
+}
+
+/* Form labels */
+label {
+   display: inline-block;
+   width: 200px;
+   float: left;
+   margin-bottom: 10px;
+}
+
+/* Input fields */
+input[type="text"], select {
+   width: calc(100% - 220px);
+   float: left;
+   padding: 5px;
+   margin-bottom: 15px;
+   border: 1px solid #CCC;
+   border-radius: 3px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+   float: left;
+   margin-right: 15px;
+   margin-top: 3px;
+}
+
+input[type="submit"] {
+   padding: 10px 20px;
+   font-size: 16px;
+   background-color: #5472B2;
+   color: rgb(236, 236, 240);
+   border: none;
+   border-radius: 3px;
+   cursor: pointer;
+}
+
+input[type="submit"]:hover {
+   background-color: #405B8A;
+}
+
+/* Error messages */
+.error {
+   color: red;
+   margin-top: 10px;
+   font-size: 14px;
+}
+
+/* Total price box */
+div#total-price-section {
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+div#total-price-section span {
+   display: inline-block;
+   float: left;
+   padding-left: 8px;
+}
+
+/* Total price box */
+div#totalBox {
+   width: 200px;
+   outline: 1px solid gray;
+   height: 30px;
+   line-height: 30px;
+   font-size: 16px;
+   text-align: right;
+   background-color: white;
+   padding-right: 10px;
+   float: left;
+   margin-bottom: 20px;
+}
+
+/* Separating border */
+div#border {
+   float: left;
+   clear: left;
+   height: 2px;
+   background-color: #5472B2;
+   width: 100%;
+   margin-bottom: 15px;
+}
