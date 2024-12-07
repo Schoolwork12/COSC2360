@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+Created by Tony Dyer
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bar Location Viewer with Google Maps</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"defer></script>
+  <script src="Final.js"defer></script>
+  <link rel="stylesheet" href="Final.css"defer />
+  <!-- Load Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key="defer></script>
+
+</head>
+<body>
+
+  <h1>Bar Location Viewer with Google Maps</h1>
+  
+  <!-- File Input -->
+  <input type="file" id="excelFile" accept=".xlsx, .xls">
+  
+  <!-- Data Output -->
+  <div id="output"></div>
+  
+  <!-- Google Map -->
+  <div id="map"></div>
+</body>
